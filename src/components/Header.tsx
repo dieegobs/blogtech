@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function Header(){
     return (
-        <header>
+        <header className='w-full h-28 flex items-center'>
             <Image 
             src={"/logo.png"}
             alt="Logo do BlogTech"
