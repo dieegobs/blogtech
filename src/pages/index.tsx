@@ -21,7 +21,7 @@ export default function Home() {
 
         <Link 
         href="/post"
-        className='w-full h-full flex gap-8 items-center justify-center mt-12'>
+        className='w-full h-full flex gap-8 items-center justify-center mt-12 hover:brightness-75 transition-all'>
           <div className='flex flex-1 h-[334px] relative rounded-2xl overflow-hidden'>
             <Image
               src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"

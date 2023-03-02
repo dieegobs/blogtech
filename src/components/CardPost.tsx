@@ -1,9 +1,12 @@
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CardPost(){
     return (
-        <div className="w-full max-w-[352px] h-full flex flex-col items-center justify-between gap-7">
+        <Link
+        href={'/post'}
+        className="w-full max-w-[352px] h-full flex flex-col items-center justify-between gap-7 hover:brightness-75 transition-all">
             <div className='flex w-full h-[234px] relative rounded-2xl overflow-hidden'>
             <Image
               src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -24,6 +27,6 @@ export default function CardPost(){
           </div>
           
           </div>
-        </div>
+        </Link>
     )
 }
