@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { Header } from '@/components/Header'
+import Link from 'next/link'
+
 
 export default function Post (){
     return(
@@ -15,6 +17,14 @@ export default function Post (){
   
         <div className='w-full max-w-[1120px] flex flex-col mx-auto pb-12'>
           <Header />
+
+        <Link 
+            href="/"
+            className='flex w-full max-w-fit px-4 font-bold text-zinc-900 hover:text-zinc-600'
+        >
+        Voltar
+        </Link>
+
   
           <div className='w-full h-full flex flex-col mt-8'>
             <div className='flex w-full h-[392px] relative rounded-2xl overflow-hidden'>
