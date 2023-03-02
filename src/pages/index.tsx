@@ -1,3 +1,4 @@
+import CardPost from '@/components/CardPost'
 import { Header } from '@/components/Header'
 import Head from 'next/head'
 
@@ -30,21 +31,27 @@ export default function Home() {
 
           <div className='flex flex-1 h-[334px] flex-col gap-6'>
             <h1 className='font-bold text-[40px] text-blue-600'>Como desenvolver um blog com next.js</h1>
-            <p className='text-zinc-600'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            <p className='text-zinc-600'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-          
+
             <div>
-            <p className='font-bold text-zinc-900'>Diego Bittencourt</p>
-            <p className='text-zinc-600 font-sm'>31 de janeiro de 2023</p>
+              <p className='font-bold text-zinc-900'>Diego Bittencourt</p>
+              <p className='text-zinc-600 font-sm'>31 de janeiro de 2023</p>
+            </div>
           </div>
-          
-          </div>
-
-          
-
-
-
         </div>
+
+
+
+        <div className='grid grid-cols-3 gap-8 mt-12'>
+          <CardPost />
+          <CardPost />
+          <CardPost />
+          <CardPost />
+          <CardPost />
+          <CardPost />
+        </div>
+
       </div>
 
     </>
